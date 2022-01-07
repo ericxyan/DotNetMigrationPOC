@@ -37,6 +37,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="appsettings.json" />
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
