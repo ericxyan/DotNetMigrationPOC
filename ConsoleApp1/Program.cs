@@ -10,6 +10,14 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            var db = new MasterEntities();
+            var query = from b in db.tblUsers select b;
+            foreach(var item in query)
+            {
+                Console.WriteLine(item.Name);
+            }
+
+            Console.ReadLine();
         }
     }
 }
